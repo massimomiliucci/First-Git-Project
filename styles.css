@@ -34,6 +34,13 @@ body {
     flex-direction: column;
 }
 
+/* Top section: title, price, and content; grows to push CTA to bottom */
+.card-top {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .card-title {
     font-size: 32px;
     font-weight: 600;
@@ -49,6 +56,11 @@ body {
 
 .card-content {
     flex-grow: 1;
+}
+
+/* Call to action anchored at bottom of card */
+.card .download-button {
+    margin-top: auto;
 }
 
 .includes-text {
